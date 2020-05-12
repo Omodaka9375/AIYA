@@ -95,8 +95,8 @@ print("\nNum. of phrases found: " + str(len(key_list)))
 
 
 # pick every n-th keywor skipping first two
-small_list = key_list[2::-repeater]
-big_list = value_list[2::-repeater]
+small_list = key_list[1::]#repeater]
+big_list = value_list[1::]#repeater]
 print("\nNum. of words chosen: " + str(len(small_list)))
 print("\nWords chosen: " + str(small_list))
 
