@@ -12,13 +12,22 @@ This project has wrapped up five different AI's to achieve it's goal (and a lot 
 
 ## Meet AIYA
 ![AIYA](./configuration/background.jpg)
-## Demo videos and AIYA's channel
+## AIYA's demo video 
 [![](http://img.youtube.com/vi/VkoQecLPkS4/0.jpg)](http://www.youtube.com/watch?v=VkoQecLPkS4)
 ---------------------------------------------------------------
 ## Requirements
-- Download and make Gentle (forced aligner): [https://github.com/lowerquality/gentle](https://github.com/lowerquality/gentle)
-- Train and save GTP2 model checkpoint in 'configuration/text/checkpoint/'. You can use this Colab file to do so here: [https://colab.research.google.com/github/Omodaka9375/GPT-2-Text-Generation/blob/master/GTP2.ipynb](https://colab.research.google.com/github/Omodaka9375/GPT-2-Text-Generation/blob/master/GTP2.ipynb)
-- Train and download TTS PWGAN model by following instructions in 'configuration/voice/creatVoice.py'
+- Download and make Gentle (forced aligner): 
+[https://github.com/lowerquality/gentle](https://github.com/lowerquality/gentle)
+
+- Train and save GTP2 model checkpoint in 'configuration/text/checkpoint/'
+
+You can use this Colab file to do so here:
+[https://colab.research.google.com/github/Omodaka9375/GPT-2-Text-Generation/blob/master/GTP2.ipynb](https://colab.research.google.com/github/Omodaka9375/GPT-2-Text-Generation/blob/master/GTP2.ipynb)
+
+or
+
+If you want to reproduce same results you can use my model by downloading and unzipping this file in 'configuration/text' folder: [https://drive.google.com/file/d/1-0SHdVVcxVa5I3sopWywNzjoi9qWTKBW/view?usp=sharing](https://drive.google.com/file/d/1-0SHdVVcxVa5I3sopWywNzjoi9qWTKBW/view?usp=sharing)
+- Train and download TTS PWGAN model by following instructions in 'configuration/voice/createVoice.py'
 - Install spaCy: [https://github.com/explosion/spaCy](https://github.com/explosion/spaCy)
 - Go to Google Cloud Text-to-Speech and create an API key: [https://cloud.google.com/speech-to-text/](https://cloud.google.com/speech-to-text/) 
 - Follow this guide to create credentials for YT upload: [https://github.com/tokland/youtube-upload/](https://github.com/tokland/youtube-upload/)
