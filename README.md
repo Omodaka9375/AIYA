@@ -11,7 +11,7 @@ Ultimate idea is to use public blockchain voting mechanism as a means of decidin
 This project has wrapped up five different AI's to achieve it's goal (and a lot of ffmpeg!)
 
 ## Meet AIYA
-![AIYA](./configuration/background.jpg)
+![AIYA](./thumb.jpg)
 ## AIYA's demo video 
 [![](http://img.youtube.com/vi/VkoQecLPkS4/0.jpg)](http://www.youtube.com/watch?v=VkoQecLPkS4)
 ---------------------------------------------------------------
