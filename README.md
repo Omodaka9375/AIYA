@@ -2,9 +2,9 @@
 
 This is a hobby project done in my spare time.
 
-The basic idea is to create AI youtuber thats fully automated and can create daily videos on given subjects, voted by viewers. It's an attempt to create first artificial Youtube personality that is fully autonomous as a content creator.
+The basic idea is to create AI youtuber thats fully automated and can create daily videos on given subjects, voted by viewers. It's an attempt to create first artificial youtube personality that is fully autonomous as a content creator.
 
-Ultimate idea is to use public blockchain voting mechanism as a means of deciding topics of upcomming videos. This would mean AI would be crypto driven by payments accumulated from willingfull participants in form of vote for suggested topic. This is well under **TODO**
+Ultimate idea is to use public blockchain voting mechanism as a means of deciding topics of upcomming videos. This would mean AI would be crypto driven by payments accumulated from willingfull participants in form of vote for suggested topic.
 
 This project has wrapped up five different AI's to achieve it's goal (and a lot of ffmpeg!)
 
@@ -58,11 +58,14 @@ If you want to reproduce same results you can use my model by downloading and un
 - Add support for image animation (rolling picture, popups, transition style), e.g.,
 > ffmpeg -i out.mp4 -i images/bicycle.png -filter_complex "[1] scale=100:100 [tmp]; [0][tmp] overlay=x='if(gte(t,2), t*100, 10)':y=30" outputfile.mp4
 - Add support for random zoom in effects
-- Exclude repeated words from the bag (mix verbs and phrases)
+- Exclude repeated words from the bag
+- Include phrases not just verbs 
 - Add support for loading marked or unmarked text directly
 - Add support for blockchain or twitter voting
-- Add better voice
-- Train model with more data
+- Train better voice model
+- Train GTP-2 model with more data
+- Replace Bing as image searcher
+- Add face to the voice
 ---------------------------------------------------------------
 ## AI stack:
 - OpeAI GTP-2 774M model trained in Google collab: [https://github.com/openai/gpt-2](https://github.com/openai/gpt-2) [**for text creation**]
@@ -72,7 +75,7 @@ If you want to reproduce same results you can use my model by downloading and un
 - TTS ParallelWave GAN model:[https://github.com/kan-bayashi/ParallelWaveGAN](https://github.com/kan-bayashi/ParallelWaveGAN) [**for generating voice from text**]
 ---------------------------------------------------------------
 ## Contact
-branislav.djalic@gmail.com
+- branislav.djalic@gmail.com
 ---------------------------------------------------------------
 ## Contributions
 Feel free to contribute, comment, improve or make your own AI youtuber ;)
