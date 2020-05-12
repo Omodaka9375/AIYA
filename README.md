@@ -1,10 +1,8 @@
 # AIYA - Artificial Youtuber Project
 
-This is a hobby project inspired by @carykh and other youtubers, done in my spare time.
+This is a hobby project done in my spare time.
 
-The idea is to create AI youtuber thats fully automated and can create daily videos on given subjects, voted by viewers.
-
-This is an orchestraded attempt to create first artificial personality that is fully autonomous on Youtube. 
+The basic idea is to create AI youtuber thats fully automated and can create daily videos on given subjects, voted by viewers. It's an attempt to create first artificial Youtube personality that is fully autonomous as a content creator.
 
 Ultimate idea is to use public blockchain voting mechanism as a means of deciding topics of upcomming videos. This would mean AI would be crypto driven by payments accumulated from willingfull participants in form of vote for suggested topic. This is well under **TODO**
 
