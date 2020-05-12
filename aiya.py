@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     subprocess.call('python3 configuration/text/createText.py "' + args.input_text + '"', shell=True)
     subprocess.call('python3 configuration/voice/createVoice.py',shell=True)
-    subprocess.call('python3 AiGenerate.py -a ' + final_audio_path + ' -b ' + args.background + ' -r ' + str(args.repeater) + ' -d ' + str(args.duration) + ' -p ' + str(args.position) + ' -l ' + str(args.limit), shell=True)
+    subprocess.call('python3 configuration/generate.py -a ' + final_audio_path + ' -b ' + args.background + ' -r ' + str(args.repeater) + ' -d ' + str(args.duration) + ' -p ' + str(args.position) + ' -l ' + str(args.limit), shell=True)
 
     if args.upload==True and args.title:
         print ('Uploading to YT...')

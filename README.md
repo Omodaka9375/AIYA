@@ -23,7 +23,7 @@ This project has wrapped up five different AI's to achieve it's goal (and a lot 
 3. Spin up Gentle docker image on localhost
 > sudo docker run --network host -P lowerquality/gentle
 4. In project root folder execute this command, while replacing the value of '-i' (in different terminal)
-> python3 Ai.py -i "Love is"
+> python3 aiya.py -i "Love is"
 5. Result will be in '/result' folder
 6. For uploding to YT, fill the credentials file in 'configuration/ytcreds/' and enter -u parameter as 'True' 
 ---------------------------------------------------------------
