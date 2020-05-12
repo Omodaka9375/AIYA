@@ -35,11 +35,11 @@ If you want to reproduce same results you can use my model by downloading and un
 ## Basic usage (Python 3.6 =>)
 1. Install dependencies
 > pip3 install -r requirements.txt
-2. Spin up Gentle docker image on localhost
-> sudo docker run --network host -P lowerquality/gentle
+2. Spin up Gentle docker image on localhost (in one terminal)
+> docker run --network host -P lowerquality/gentle
 3. In project root folder execute this command, while replacing the value of '-i' (in different terminal)
 > python3 aiya.py -i "Love is"
-4. Result will be in '/result' folder
+4. Result will be in './result' folder
 5. For uploding to YT, fill the credentials file in 'configuration/ytcreds/' and enter -u parameter as 'True' 
 ---------------------------------------------------------------
 ## Features
