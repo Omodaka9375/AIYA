@@ -67,7 +67,11 @@ If you want to reproduce same results you can use my model by downloading and un
 - Replace Bing as image searcher
 - Add face to the voice
 ---------------------------------------------------------------
-## AI stack:
+## Troubleshoting
+- If proces ends with error, it is mostly due to corrupted images that were randomly picked or while downloading. You can increase the number of imager per term using '-l' parameter, default is 4, and re-run the script.
+- Most customizations can be done using parameters. Check 'aiya.py' for usage and optional parametars.
+---------------------------------------------------------------
+## AI stack
 - OpeAI GTP-2 774M model trained in Google collab: [https://github.com/openai/gpt-2](https://github.com/openai/gpt-2) [**for text creation**]
 - Google Speech Recognizer: [https://cloud.google.com/speech-to-text/](https://cloud.google.com/speech-to-text/) [**for speech to text**]
 - Gentle: [https://github.com/lowerquality/gentle](https://github.com/lowerquality/gentle) [**for timed transcription from audio**]
