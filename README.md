@@ -11,7 +11,7 @@ This project has wrapped up five different AI's to achieve it's goal (and a lot 
 ## Meet AIYA
 ![AIYA](./thumb.jpg)
 ## AIYA's demo video 
-[![](http://img.youtube.com/vi/VkoQecLPkS4/0.jpg)](http://www.youtube.com/watch?v=VkoQecLPkS4)
+[![](http://img.youtube.com/vi/lzG6mV0qXAs/0.jpg)](https://youtu.be/lzG6mV0qXAs)
 ---------------------------------------------------------------
 ## Requirements
 - Download and make Gentle (forced aligner): 
@@ -58,8 +58,7 @@ If you want to reproduce same results you can use my model by downloading and un
 - Add support for image animation (rolling picture, popups, transition style), e.g.,
 > ffmpeg -i out.mp4 -i images/bicycle.png -filter_complex "[1] scale=100:100 [tmp]; [0][tmp] overlay=x='if(gte(t,2), t*100, 10)':y=30" outputfile.mp4
 - Add support for random zoom in effects
-- Exclude repeated words from the bag
-- Include phrases not just verbs 
+- Include phrases not just verbs in the bag
 - Add support for loading marked or unmarked text directly
 - Add support for blockchain or twitter voting
 - Train better voice model
@@ -70,6 +69,7 @@ If you want to reproduce same results you can use my model by downloading and un
 ## Troubleshoting
 - If proces ends with error, it is mostly due to corrupted images that were randomly picked or while downloading. You can increase the number of imager per term using '-l' parameter, default is 4, and re-run the script.
 - Most customizations can be done using parameters. Check 'aiya.py' for usage and optional parametars.
+- If the generated sentences are too long they will be cut at the end :(
 ---------------------------------------------------------------
 ## AI stack
 - OpeAI GTP-2 774M model trained in Google collab: [https://github.com/openai/gpt-2](https://github.com/openai/gpt-2) [**for text creation**]
