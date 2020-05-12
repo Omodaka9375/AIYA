@@ -6,29 +6,34 @@ The idea is to create AI youtuber thats fully automated and can create daily vid
 
 This is an orchestraded attempt to create first artificial personality that is fully autonomous on Youtube. 
 
-My ultimate idea is to use public blockchain voting mechanism as a means of deciding topics of upcomming videos. This would mean AI would be crypto driven by payments accumulated from willingfull participants in form of vote for suggested topic. This is well under **TODO**
+Ultimate idea is to use public blockchain voting mechanism as a means of deciding topics of upcomming videos. This would mean AI would be crypto driven by payments accumulated from willingfull participants in form of vote for suggested topic. This is well under **TODO**
 
 This project has wrapped up five different AI's to achieve it's goal (and a lot of ffmpeg!)
 
 ## Meet AIYA
 ![AIYA](./configuration/background.jpg)
-
-## Demo video
-[![](http://img.youtube.com/vi/VkoQecLPkS4/0.jpg)](http://www.youtube.com/watch?v=VkoQecLPkS4 "Demo video on YT")
+## Demo videos and AIYA's channel
+[![](http://img.youtube.com/vi/VkoQecLPkS4/0.jpg)](http://www.youtube.com/watch?v=VkoQecLPkS4)
 ---------------------------------------------------------------
-### Basic usage (Python 3.6 =>)
-1. Download and install Gentle: [https://github.com/lowerquality/gentle](https://github.com/lowerquality/gentle)
-2. Install dependencies
+## Requirements
+- Download and make Gentle (forced aligner): [https://github.com/lowerquality/gentle](https://github.com/lowerquality/gentle)
+- Train and save GTP2 model checkpoint in 'configuration/text/checkpoint/'. You can use this Colab file to do so here: [https://colab.research.google.com/github/Omodaka9375/GPT-2-Text-Generation/blob/master/GTP2.ipynb](https://colab.research.google.com/github/Omodaka9375/GPT-2-Text-Generation/blob/master/GTP2.ipynb)
+- Train and download TTS PWGAN model by following instructions in 'configuration/voice/creatVoice.py'
+- Install spaCy: [https://github.com/explosion/spaCy](https://github.com/explosion/spaCy)
+- Go to Google Cloud Text-to-Speech and create an API key: [https://cloud.google.com/speech-to-text/](https://cloud.google.com/speech-to-text/) 
+- Follow this guide to create credentials for YT upload: [https://github.com/tokland/youtube-upload/](https://github.com/tokland/youtube-upload/)
+---------------------------------------------------------------
+## Basic usage (Python 3.6 =>)
+1. Install dependencies
 > pip3 install -r requirements.txt
-3. Spin up Gentle docker image on localhost
+2. Spin up Gentle docker image on localhost
 > sudo docker run --network host -P lowerquality/gentle
-4. In project root folder execute this command, while replacing the value of '-i' (in different terminal)
+3. In project root folder execute this command, while replacing the value of '-i' (in different terminal)
 > python3 aiya.py -i "Love is"
-5. Result will be in '/result' folder
-6. For uploding to YT, fill the credentials file in 'configuration/ytcreds/' and enter -u parameter as 'True' 
+4. Result will be in '/result' folder
+5. For uploding to YT, fill the credentials file in 'configuration/ytcreds/' and enter -u parameter as 'True' 
 ---------------------------------------------------------------
 ## Features
-### Generate video
 - Create YT like video from a phrase or a term
 - Supports video or image background
 - Overlay images over static image background
@@ -40,12 +45,6 @@ This project has wrapped up five different AI's to achieve it's goal (and a lot 
 - Directly upload to YT
 - Create thumbnail
 - Support title adding as parametar
-
-### Edit video
-- JumpCutter
-- SpeedUpper **TODO**
-- SlowDowner **TODO**
-- BeepCutter
 ---------------------------------------------------------------
 ## TODO
 - Better error handling
@@ -55,8 +54,8 @@ This project has wrapped up five different AI's to achieve it's goal (and a lot 
 - Exclude repeated words from the bag (mix verbs and phrases)
 - Add support for loading marked or unmarked text directly
 - Add support for blockchain or twitter voting
-
-Both editing and generation can be used just by itself by executing AiEdit.py and AiGenerate.py. In the comments you can find example commands to run.
+- Add better voice
+- Train model with more data
 ---------------------------------------------------------------
 ## AI stack:
 - OpeAI GTP-2 774M model trained in Google collab: [https://github.com/openai/gpt-2](https://github.com/openai/gpt-2) [**for text creation**]
