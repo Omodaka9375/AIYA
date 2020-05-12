@@ -16,4 +16,4 @@ if __name__ == "__main__":
         parser.error('Provide audio file path and provide background for the video and try again.')
         exit(0)
     else:
-        subprocess.call('python3 configuration/grippa.py ' + args.input_audio + ' ' + args.input_background + ' ' + str(args.repeater) + ' ' + str(args.duration) + ' ' + str(args.position) + ' ' + str(args.limit), shell=True)
+        subprocess.call('python3 configuration/main.py ' + args.input_audio + ' ' + args.input_background + ' ' + str(args.repeater) + ' ' + str(args.duration) + ' ' + str(args.position) + ' ' + str(args.limit), shell=True)

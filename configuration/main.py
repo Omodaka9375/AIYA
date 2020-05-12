@@ -26,7 +26,7 @@ speed=float(argv[4])
 position=int(argv[5])
 limit=int(argv[6])
 
-googlekey='AIzaSyCb1U77Rz0dnCOkQUiKZ2QYJhLBqV-kp1k'
+googlekey='<YOUR-GOOGLE-CLOUD-SPEECH-KEY>'
 # cleanup previous results
 if os.path.exists('configuration/result'):
     shutil.rmtree('configuration/result')
