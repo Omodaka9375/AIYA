@@ -395,7 +395,7 @@ tensorboardX==2.0
 tensorflow==1.14.0
 tensorflow-datasets==1.0.2
 tensorflow-estimator==1.14.0
-tensorflow-gpu==2.0.0a0
+tensorflow-gpu==2.5.1
 tensorflow-hub==0.7.0
 tensorflow-metadata==0.13.0
 tensorflow-probability==0.7.0
