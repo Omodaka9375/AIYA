@@ -80,7 +80,7 @@ decorator==4.4.0
 defusedxml==0.5.0
 dill==0.3.0
 distributed==1.26.0
-Django==3.1.6
+Django==3.1.13
 docopt==0.6.2
 docproduct==0.2.0
 docutils==0.14
