@@ -65,7 +65,7 @@ contractions==0.0.18
 cryptography==3.3.2
 cssselect==1.0.3
 csvw==1.7.0
-cvxopt==1.2.5
+cvxopt==1.2.7
 cycler==0.10.0
 cymem==2.0.3
 Cython==0.29.6
