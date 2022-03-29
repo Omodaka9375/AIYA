@@ -239,7 +239,7 @@ pandas==0.24.2
 pandas-profiling==2.1.2
 pandocfilters==1.4.2
 parallel-wavegan==0.2.7.post1
-paramiko==2.7.1
+paramiko==2.10.1
 parsel==1.5.1
 parso==0.5.0
 partd==0.3.10
