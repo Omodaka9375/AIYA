@@ -130,7 +130,7 @@ gunicorn==19.9.0
 gym==0.13.0
 h5py==2.10.0
 heapdict==1.0.0
-html5lib==0.9999999
+html5lib==0.999999999
 htmlmin==0.1.12
 httplib2==0.19.0
 hyperlink==19.0.0
