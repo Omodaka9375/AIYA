@@ -218,7 +218,7 @@ mysql==0.0.2
 mysqlclient==1.4.2.post1
 nassl==2.1.2
 navigator-updater==0.2.1
-nbconvert==5.4.1
+nbconvert==6.3.0
 nbformat==4.4.0
 networkx==1.8.1
 nltk==3.4.5
