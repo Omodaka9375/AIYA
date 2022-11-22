@@ -255,7 +255,7 @@ phik==0.9.8
 phonemizer==2.1
 photoshop-connection==0.1.1
 pickleshare==0.7.5
-Pillow==8.3.2
+Pillow==9.3.0
 Pint==0.9
 pipenv==2018.11.26
 pkginfo==1.5.0.1
